@@ -24,10 +24,10 @@ interface ActivityData {
 
 function populate(data: ActivityData) {
     for (const [k, v] of Object.entries(data)) {
-        const el = getById(k) as HTMLImageElement;
+        const el = getById(k);
 
         if (k === "album-art")
-            el.src = v;
+            (el as HTMLImageElement).src = v;
         else
             el.textContent = v;
     }
