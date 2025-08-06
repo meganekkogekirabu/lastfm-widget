@@ -3,12 +3,12 @@
   --border: solid 1px #F39;
 }
 
-a {
+#lastfm-side>a {
   text-decoration: none;
   cursor: pointer;
 }
 
-a:hover {
+#lastfm-side>a:hover {
   text-decoration: underline;
 }
 
@@ -35,6 +35,7 @@ a:hover {
   object-fit: cover;
   margin: 20px;
   background-color: white;
+  box-shadow: 5px 1px 20px darkgray;
 }
 
 #lastfm-side {
@@ -47,6 +48,7 @@ a:hover {
 #lastfm-side>* {
   user-select: none;
   cursor: default;
+  width: fit-content;
 }
 
 h4,
